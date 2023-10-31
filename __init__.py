@@ -59,7 +59,7 @@ class SEQUENCER_OT_join_strips(bpy.types.Operator):
                             # If the start frame of the current strip matches the start frame of the next strip, join them
                             if current_strip.frame_start == next_strip.frame_start:
                                 join(vse, current_strip, next_strip)
-                        # If not the the joinable strip types, just join them.
+                        # If not within the joinable strip types, just join them.
                         else:
                             join(vse, current_strip, next_strip)
         return {"FINISHED"}
